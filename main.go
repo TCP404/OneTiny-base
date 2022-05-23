@@ -24,19 +24,19 @@ func main() {
 		return
 	}
 
-	// coreClient := include.Core
+	coreClient := include.Core
 
-	// if err = coreClient.NewVerifyChain().
-	// 	AddToHead(coreClient.NewPortHandler(args.Port)).
-	// 	AddToHead(coreClient.NewPathHandler(args.RootPath)).
-	// 	Iterator(); err != nil {
-	// 	return
-	// }
+	if err = coreClient.NewVerifyChain().
+		AddToHead(coreClient.NewPortHandler(args.Port)).
+		AddToHead(coreClient.NewPathHandler(args.RootPath)).
+		Iterator(); err != nil {
+		return
+	}
 
-	// if err = coreClient.New(vo.Release).
-	// 	SetConfig(args.IP, args.Port, args.RootPath, vo.IsAllowUpload(args.IsAllowUpload), vo.MaxLevel(100)).
-	// 	PrintInfo(vo.PAddr, vo.PPath, vo.PAllow).
-	// 	Run(); err != nil {
-	// 	return
-	// }
+	if err = coreClient.New(vo.Release).
+		SetConfig(args.IP, args.Port, args.RootPath, vo.IsAllowUpload(args.IsAllowUpload), vo.MaxLevel(100)).
+		PrintInfo(vo.PAddr, vo.PPath, vo.PAllow).
+		Run(); err != nil {
+		return
+	}
 }
