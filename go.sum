@@ -42,6 +42,8 @@ github.com/TCP404/OneTiny-core v0.0.1 h1:K4krDjOdh2isvhurZ+QGaoibg7XUDk8Lb3tUc0u
 github.com/TCP404/OneTiny-core v0.0.1/go.mod h1:S43BiPT623k9wWBxvEr1ksXjqaDLQ/juK0UPsYDmmQY=
 github.com/TCP404/eutil v0.0.2 h1:G2/k9VFUIF1zg77zuXWbXtiy9a8tARjB4c8/oDZqoqg=
 github.com/TCP404/eutil v0.0.2/go.mod h1:Sgrxepu1ws9lWdGhx34qNJvbnxNZqyUhrndBP9BhgAM=
+github.com/TCP404/eutil v0.0.3 h1:6JtKhGahYGDff0C9OYIBYZsVoLozoS4ykcsjKeFeCOY=
+github.com/TCP404/eutil v0.0.3/go.mod h1:Sgrxepu1ws9lWdGhx34qNJvbnxNZqyUhrndBP9BhgAM=
 github.com/census-instrumentation/opencensus-proto v0.2.1/go.mod h1:f6KPmirojxKA12rnyqOA5BBL4O983OfeGPqjHWSTneU=
 github.com/chzyer/logex v1.1.10/go.mod h1:+Ywpsq7O8HXn0nuIou7OrIPyXbp3wmkHB+jjWRnGsAI=
 github.com/chzyer/readline v0.0.0-20180603132655-2972be24d48e/go.mod h1:nSuG5e5PlCu98SY8svDHJxuZscDgtXS6KTTbou5AhLI=

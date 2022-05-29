@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/TCP404/OneTiny-core v0.0.1
-	github.com/TCP404/eutil v0.0.2
+	github.com/TCP404/eutil v0.0.3
 	github.com/fatih/color v1.13.0
 	github.com/gin-gonic/gin v1.7.7
 	github.com/schollz/progressbar/v3 v3.8.6

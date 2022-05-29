@@ -9,7 +9,7 @@ import (
 	"github.com/TCP404/OneTiny-base/args"
 	"github.com/TCP404/OneTiny-base/core/middleware"
 	"github.com/TCP404/OneTiny-base/core/routes"
-	"github.com/TCP404/OneTiny-base/util"
+	"github.com/TCP404/eutil"
 
 	"github.com/fatih/color"
 	"github.com/gin-gonic/gin"
@@ -39,7 +39,7 @@ func StartUpGin() *gin.Engine {
 // printInfo 会在程序启动后打印本机 IP、共享目录、是否允许上传的信息
 func printInfo() {
 	log.SetOutput(color.Output)
-	ip, err := util.GetIP()
+	ip, err := eutil.GetLocalIP()
 	args.IP = ip
 	// Print IP infomation
 	if args.IP == "" || err != nil {
