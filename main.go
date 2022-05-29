@@ -6,9 +6,9 @@ import (
 
 	"github.com/TCP404/OneTiny-base/args"
 	"github.com/TCP404/OneTiny-base/cmd"
+	"github.com/TCP404/OneTiny-base/core"
 	"github.com/TCP404/OneTiny-base/include"
 
-	"github.com/TCP404/OneTiny-core/gateway/vo"
 	"github.com/fatih/color"
 )
 
@@ -32,11 +32,7 @@ func main() {
 		Iterator(); err != nil {
 		return
 	}
-
-	if err = coreClient.New(vo.Release).
-		SetConfig(args.IP, args.Port, args.RootPath, vo.IsAllowUpload(args.IsAllowUpload), vo.MaxLevel(100)).
-		PrintInfo(vo.PAddr, vo.PPath, vo.PAllow).
-		Run(); err != nil {
+	if err = core.RunCore(); err != nil {
 		return
 	}
 }

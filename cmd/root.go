@@ -58,5 +58,4 @@ func CLI() *cli.App {
 			return nil
 		},
 	}
-
 }
